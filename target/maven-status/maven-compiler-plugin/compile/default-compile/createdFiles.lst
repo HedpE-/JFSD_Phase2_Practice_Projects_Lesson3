@@ -1,0 +1,5 @@
+jfsd\assessments\phase2\entities\Product.class
+jfsd\assessments\phase2\util\ProductCRUD.class
+jfsd\assessments\phase2\servlets\AddProductServlet.class
+jfsd\assessments\phase2\filters\AddProductFormDataValidationFilter.class
+jfsd\assessments\phase2\util\HibernateUtility.class

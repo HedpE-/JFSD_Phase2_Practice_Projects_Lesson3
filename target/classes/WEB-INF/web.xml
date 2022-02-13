@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0">
+	<display-name>JFSD_Phase2_Practice_Projects_Lesson3</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description></description>
+		<display-name>AddProductServlet</display-name>
+		<servlet-name>AddProductServlet</servlet-name>
+		<servlet-class>jfsd.assessments.phase2.servlets.AddProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddProductServlet</servlet-name>
+		<url-pattern>/addProduct</url-pattern>
+	</servlet-mapping>
+	<filter>
+		<display-name>AddProductFormDataValidationFilter</display-name>
+		<filter-name>AddProductFormDataValidationFilter</filter-name>
+		<filter-class>jfsd.assessments.phase2.filters.AddProductFormDataValidationFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>AddProductFormDataValidationFilter</filter-name>
+		<servlet-name>AddProductServlet</servlet-name>
+	</filter-mapping>
+</web-app>
