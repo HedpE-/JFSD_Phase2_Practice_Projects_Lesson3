@@ -42,10 +42,10 @@ public class AddProductServlet extends HttpServlet {
 			rd = request.getRequestDispatcher("viewProduct.jsp");
 			request.setAttribute("product", prod);
 			rd.include(request, response);
-			writer.print("<center><a href='index.html' class='btn btn-primary'>Add another product</a></center>");
+			writer.print("<center><a href='index.jsp' class='btn btn-primary'>Add another product</a></center>");
 		}
 		catch(Exception e) {
-			rd = request.getRequestDispatcher("index.html");
+			rd = request.getRequestDispatcher("index.jsp");
 			rd.include(request,  response);
 			writer.println("<br/><center><span style='color:red'>Failed to add product to database</span></center>");
 			e.printStackTrace();

@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,14 +33,14 @@
 					</div>
 
 					<div class="form-group">
-						<label for="phone">Average Weight in Kg:</label> <input type="number" step="0.01"
-							class="form-control" id="avgWeight" placeholder="Enter the average weight"
-							name="avgWeight">
+						<label for="phone">Average Weight in Kg:</label> <input
+							type="number" step="0.01" class="form-control" id="avgWeight"
+							placeholder="Enter the average weight" name="avgWeight">
 					</div>
 					<div class="form-group">
-						<label for="email">Price in EUR:</label> <input type="number" step="0.01"
-							class="form-control" id="price" placeholder="Enter price"
-							name="price">
+						<label for="email">Price in EUR:</label> <input type="number"
+							step="0.01" class="form-control" id="price"
+							placeholder="Enter price" name="price">
 					</div>
 					<div align="center">
 						<input type="submit" class="btn btn-primary" value="Add Product" />

@@ -59,7 +59,7 @@ public class AddProductFormDataValidationFilter implements Filter {
 		catch(Exception e) {
 			PrintWriter out = response.getWriter();
 
-			request.getRequestDispatcher("index.html").include(request, response);
+			request.getRequestDispatcher("index.jsp").include(request, response);
 			out.println("<span style='color:red'>Invalid Form data detected:<br/>"+e.getMessage()+"</span>");
 		}
 	}
